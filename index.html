@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <title>Link-in-Bio Layout</title>
     <style>
         * {
-            border: 1px red dashed; /* Debugging borders */
+          /*  border: 1px red dashed; /* Debugging borders */
+        }
+
+        html {
+            min-height: 100%;
         }
 
         body {
@@ -16,23 +21,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100%;
             padding-top: 40px;
             padding-bottom: 40px;
+            background: radial-gradient(circle at 50% 50%, #5b5255, #ab5b75, #df819f, #fac0d2, #fddedd, #f4e8cc, #d6e4c1, #bccebd);
+            font-family: "Georgia";
         }
 
         .main-container {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
+            width: 640px;
+            margin: auto;
             max-width: 600px;
             text-align: center;
             padding: 20px;
         }
 
         .image-row {
-            margin: 20px 0;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .avatar-image {
@@ -43,13 +52,14 @@
         }
 
         .name-row {
-            margin: 10px 0;
+            margin-bottom: 30px;
             font-size: 24px;
             font-weight: bold;
+            text-align: center;
         }
 
         .social-icons-row {
-            margin: 20px 0;
+            margin-bottom: 30px;
             display: flex;
             justify-content: center;
             gap: 10px;
@@ -76,7 +86,6 @@
             display: block;
             margin: 10px 0;
             padding: 15px;
-           
             background-color: #007BFF;
             color: white;
             text-decoration: none;
@@ -94,6 +103,15 @@
             border-radius: 48px;
             object-fit: cover;
         }
+
+        .item {
+            background-color: rgba(149, 123, 173, 0.5);
+            padding: 5px;
+            margin-bottom: 20px;
+            border-radius: 1000px;
+            padding-right: 53px;
+            box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+        }
     </style>
 </head>
 <body>
@@ -105,17 +123,22 @@
             Julia Luo
         </div>
         <div class="social-icons-row">
-            <a href="https://github.com/" target="_blank">Git</a>
-            <a href="https://instagram.com" target="_blank">IG</a>
-            <a href="https://linkedin.com" target="_blank">L</a>
+            <a href="https://github.com/" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
         </div>
         <div class="links-row">
             <a href="#link1">Link 1</a>
             <a href="#link2">Link 2</a>
             <a href="#link3">Link 3</a>
         </div>
-        <div>
-            <img class="thumbnail" src="/thumbnails/yc.png" alt="Thumbnail">
+        <div class="item">
         </div>
     </div>
 </body>
