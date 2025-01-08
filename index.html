@@ -1,5 +1,122 @@
-<h1>This is my homepage</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-in-Bio Layout</title>
+    <style>
+        * {
+            border: 1px red dashed; /* Debugging borders */
+        }
 
-<body> 
-  My link-in-bio
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .main-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-row {
+            margin: 20px 0;
+        }
+
+        .avatar-image {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name-row {
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .social-icons-row {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons-row a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .links-row {
+            margin-top: 20px;
+        }
+
+        .links-row a {
+            display: block;
+            margin: 10px 0;
+            padding: 15px;
+           
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .links-row a:hover {
+            background-color: #0056b3;
+        }
+
+        .thumbnail {
+            width: 48px;
+            height: 48px;
+            border-radius: 48px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-row">
+            <img class="avatar-image" src="brandon-griggs-P3v07pHGuJQ-unsplash.jpg" alt="Julia Luo headshot">
+        </div>
+        <div class="name-row">
+            Julia Luo
+        </div>
+        <div class="social-icons-row">
+            <a href="https://github.com/" target="_blank">Git</a>
+            <a href="https://instagram.com" target="_blank">IG</a>
+            <a href="https://linkedin.com" target="_blank">L</a>
+        </div>
+        <div class="links-row">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </div>
+        <div>
+            <img class="thumbnail" src="/thumbnails/yc.png" alt="Thumbnail">
+        </div>
+    </div>
 </body>
+</html>
